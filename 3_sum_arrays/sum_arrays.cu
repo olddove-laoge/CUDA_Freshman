@@ -1,6 +1,6 @@
 #include <cuda_runtime.h>
 #include <stdio.h>
-#include "freshman.h"
+#include "../freshman.h"
 
 
 void sumArrays(float * a,float * b,float * res,const int size)

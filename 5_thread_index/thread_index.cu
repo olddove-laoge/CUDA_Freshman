@@ -1,6 +1,6 @@
 #include <cuda_runtime.h>
 #include <stdio.h>
-#include "freshman.h"
+#include "../freshman.h"
 
 __global__ void printThreadIndex(float *A,const int nx,const int ny)
 {

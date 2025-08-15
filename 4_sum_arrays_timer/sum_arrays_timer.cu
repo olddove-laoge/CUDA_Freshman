@@ -1,6 +1,6 @@
 #include <cuda_runtime.h>
 #include <stdio.h>
-#include "freshman.h"
+#include "../freshman.h"
 
 
 
@@ -57,6 +57,8 @@ int main(int argc,char **argv)
   
 
   CHECK(cudaMemcpy(res_from_gpu_h,res_d,nByte,cudaMemcpyDeviceToHost));
+  cudaDeviceSynnvprof chronize();
+
   iElaps=cpuSecond()-iStart;
   printf("Execution configuration<<<%d,%d>>> Time elapsed %f sec\n",grid.x,block.x,iElaps);
   sumArrays(a_h,b_h,res_h,nElem);

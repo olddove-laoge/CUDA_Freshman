@@ -1,7 +1,7 @@
 #include <cuda_runtime.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "freshman.h"
+#include "../freshman.h"
 __global__ void warmup(float *c)
 {
 	int tid = blockIdx.x* blockDim.x + threadIdx.x;
