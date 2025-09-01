@@ -1,6 +1,6 @@
 #include <cuda_runtime.h>
 #include <stdio.h>
-#include "freshman.h"
+#include "../freshman.h"
 int recursiveReduce(int *data, int const size)
 {
 	// terminate check
